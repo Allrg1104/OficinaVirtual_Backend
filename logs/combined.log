@@ -1,0 +1,42 @@
+{"level":"info","message":"Iniciando semilla de base de datos...","timestamp":"2026-07-14 18:50:37"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-14 18:51:07"}
+{"level":"info","message":"Iniciando semilla de base de datos...","timestamp":"2026-07-14 18:52:17"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb://127.0.0.1:27017/oficina-virtual...","timestamp":"2026-07-14 18:52:17"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-14 18:52:20"}
+{"level":"warn","message":"No se pudo conectar a la base de datos local de MongoDB. Iniciando base de datos en memoria (MongoMemoryServer)...","timestamp":"2026-07-14 18:52:20"}
+{"level":"error","message":"Error en la conexión de MongoDB: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-07-14 18:52:20"}
+{"level":"info","message":"MongoMemoryServer iniciado en mongodb://127.0.0.1:61243/","timestamp":"2026-07-14 18:52:21"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-14 18:52:21"}
+{"level":"info","message":"Rol 'administrador' creado.","timestamp":"2026-07-14 18:52:21"}
+{"level":"info","message":"Rol 'autorizador' creado.","timestamp":"2026-07-14 18:52:21"}
+{"level":"info","message":"Rol 'medico' creado.","timestamp":"2026-07-14 18:52:21"}
+{"level":"info","message":"Usuario Administrador de prueba creado (admin@oficinavirtual.com / Admin123*).","timestamp":"2026-07-14 18:52:21"}
+{"level":"info","message":"Usuario Médico de prueba creado (medico@oficinavirtual.com / Medico123*).","timestamp":"2026-07-14 18:52:21"}
+{"level":"info","message":"Usuario Autorizador de prueba creado (autorizador@oficinavirtual.com / Autorizador123*).","timestamp":"2026-07-14 18:52:21"}
+{"level":"info","message":"Semilla de base de datos completada exitosamente.","timestamp":"2026-07-14 18:52:21"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-14 18:52:21"}
+{"level":"info","message":"Iniciando semilla de base de datos...","timestamp":"2026-07-14 19:29:51"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb://127.0.0.1:27017/oficina-virtual...","timestamp":"2026-07-14 19:29:51"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-14 19:29:54"}
+{"level":"warn","message":"No se pudo conectar a la base de datos local de MongoDB. Iniciando base de datos en memoria (MongoMemoryServer)...","timestamp":"2026-07-14 19:29:54"}
+{"level":"error","message":"Error en la conexión de MongoDB: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-07-14 19:29:55"}
+{"level":"info","message":"MongoMemoryServer iniciado en mongodb://127.0.0.1:31011/","timestamp":"2026-07-14 19:29:55"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-14 19:29:55"}
+{"level":"info","message":"Rol 'administrador' creado.","timestamp":"2026-07-14 19:29:55"}
+{"level":"info","message":"Rol 'autorizador' creado.","timestamp":"2026-07-14 19:29:55"}
+{"level":"info","message":"Rol 'medico' creado.","timestamp":"2026-07-14 19:29:55"}
+{"level":"info","message":"Usuario Administrador de prueba creado (admin@oficinavirtual.com / Admin123*).","timestamp":"2026-07-14 19:29:55"}
+{"level":"info","message":"Usuario Médico de prueba creado (medico@oficinavirtual.com / Medico123*).","timestamp":"2026-07-14 19:29:55"}
+{"level":"info","message":"Usuario Autorizador de prueba creado (autorizador@oficinavirtual.com / Autorizador123*).","timestamp":"2026-07-14 19:29:55"}
+{"level":"info","message":"Semilla de base de datos completada exitosamente.","timestamp":"2026-07-14 19:29:55"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb://127.0.0.1:27017/oficina-virtual...","timestamp":"2026-07-14 19:34:08"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-14 19:34:11"}
+{"level":"warn","message":"No se pudo conectar a la base de datos local de MongoDB. Iniciando base de datos en memoria (MongoMemoryServer)...","timestamp":"2026-07-14 19:34:11"}
+{"level":"error","message":"Error en la conexión de MongoDB: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-07-14 19:34:12"}
+{"level":"info","message":"MongoMemoryServer iniciado en mongodb://127.0.0.1:64505/","timestamp":"2026-07-14 19:34:12"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-14 19:34:12"}
+{"level":"info","message":"=================================","timestamp":"2026-07-14 19:34:12"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-14 19:34:12"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-14 19:34:12"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-14 19:34:12"}
+{"level":"info","message":"=================================","timestamp":"2026-07-14 19:34:12"}
