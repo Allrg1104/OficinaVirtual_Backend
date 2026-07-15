@@ -40,3 +40,15 @@
 {"level":"info","message":" Entorno: development ","timestamp":"2026-07-14 19:34:12"}
 {"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-14 19:34:12"}
 {"level":"info","message":"=================================","timestamp":"2026-07-14 19:34:12"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb+srv://allrg1104:vL4leF1sPmgI5w2Z@cluster0.xtqyw.mongodb.net/BD_Coomeva?retryWrites=true&w=majority&appName=Cluster0...","timestamp":"2026-07-14 20:54:12"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-14 20:54:12"}
+{"level":"warn","message":"No se pudo conectar a la base de datos local de MongoDB. Iniciando base de datos en memoria (MongoMemoryServer)...","timestamp":"2026-07-14 20:54:12"}
+{"level":"error","message":"Error en la conexión de MongoDB: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.xtqyw.mongodb.net","timestamp":"2026-07-14 20:54:12"}
+{"level":"info","message":"MongoMemoryServer iniciado en mongodb://127.0.0.1:11008/","timestamp":"2026-07-14 20:54:13"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-14 20:54:13"}
+{"level":"info","message":"=================================","timestamp":"2026-07-14 20:54:13"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-14 20:54:13"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-14 20:54:13"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-14 20:54:13"}
+{"level":"info","message":"=================================","timestamp":"2026-07-14 20:54:13"}
+{"level":"info","message":"Recibida señal de apagado, cerrando servidor...","timestamp":"2026-07-14 20:55:00"}
