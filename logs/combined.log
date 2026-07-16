@@ -52,3 +52,147 @@
 {"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-14 20:54:13"}
 {"level":"info","message":"=================================","timestamp":"2026-07-14 20:54:13"}
 {"level":"info","message":"Recibida señal de apagado, cerrando servidor...","timestamp":"2026-07-14 20:55:00"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb+srv://allrg1104:vL4leF1sPmgI5w2Z@cluster0.xtqyw.mongodb.net/BD_Coomeva?retryWrites=true&w=majority&appName=Cluster0...","timestamp":"2026-07-15 22:11:42"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-15 22:11:42"}
+{"level":"warn","message":"No se pudo conectar a la base de datos local de MongoDB. Iniciando base de datos en memoria (MongoMemoryServer)...","timestamp":"2026-07-15 22:11:42"}
+{"level":"error","message":"Error en la conexión de MongoDB: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.xtqyw.mongodb.net","timestamp":"2026-07-15 22:11:42"}
+{"level":"info","message":"MongoMemoryServer iniciado en mongodb://127.0.0.1:12542/","timestamp":"2026-07-15 22:11:43"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-15 22:11:43"}
+{"level":"info","message":"=================================","timestamp":"2026-07-15 22:11:43"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-15 22:11:43"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-15 22:11:43"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-15 22:11:43"}
+{"level":"info","message":"=================================","timestamp":"2026-07-15 22:11:43"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_FAILED | User: Sistema / Anónimo (N/A) | Details: Intento fallido para el correo: medico@oficinavirtual.com","timestamp":"2026-07-15 22:11:53"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_FAILED | User: Sistema / Anónimo (N/A) | Details: Intento fallido para el correo: autorizador@oficinavirtual.com","timestamp":"2026-07-15 22:11:57"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_FAILED | User: Sistema / Anónimo (N/A) | Details: Intento fallido para el correo: admin@oficinavirtual.com","timestamp":"2026-07-15 22:12:09"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_FAILED | User: Sistema / Anónimo (N/A) | Details: Intento fallido para el correo: medico@oficinavirtual.com","timestamp":"2026-07-15 22:17:48"}
+{"level":"info","message":"Iniciando semilla de base de datos...","timestamp":"2026-07-15 22:25:43"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb+srv://allrg1104:vL4leF1sPmgI5w2Z@cluster0.xtqyw.mongodb.net/BD_Coomeva?retryWrites=true&w=majority&appName=Cluster0...","timestamp":"2026-07-15 22:25:43"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-15 22:25:43"}
+{"level":"warn","message":"No se pudo conectar a la base de datos local de MongoDB. Iniciando base de datos en memoria (MongoMemoryServer)...","timestamp":"2026-07-15 22:25:43"}
+{"level":"error","message":"Error en la conexión de MongoDB: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.xtqyw.mongodb.net","timestamp":"2026-07-15 22:25:43"}
+{"level":"info","message":"MongoMemoryServer iniciado en mongodb://127.0.0.1:27826/","timestamp":"2026-07-15 22:25:44"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-15 22:25:44"}
+{"level":"info","message":"Rol 'administrador' creado.","timestamp":"2026-07-15 22:25:44"}
+{"level":"info","message":"Rol 'autorizador' creado.","timestamp":"2026-07-15 22:25:44"}
+{"level":"info","message":"Rol 'medico' creado.","timestamp":"2026-07-15 22:25:44"}
+{"level":"info","message":"Usuario Administrador de prueba creado (admin@oficinavirtual.com / Admin123*).","timestamp":"2026-07-15 22:25:44"}
+{"level":"info","message":"Usuario Médico de prueba creado (medico@oficinavirtual.com / Medico123*).","timestamp":"2026-07-15 22:25:44"}
+{"level":"info","message":"Usuario Autorizador de prueba creado (autorizador@oficinavirtual.com / Autorizador123*).","timestamp":"2026-07-15 22:25:44"}
+{"level":"info","message":"Recibida señal de apagado, cerrando servidor...","timestamp":"2026-07-15 22:27:28"}
+{"level":"info","message":"Iniciando semilla de base de datos...","timestamp":"2026-07-15 22:27:38"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb+srv://allrg1104:vL4leF1sPmgI5w2Z@cluster0.xtqyw.mongodb.net/BD_Coomeva?retryWrites=true&w=majority&appName=Cluster0...","timestamp":"2026-07-15 22:27:38"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-15 22:27:38"}
+{"level":"warn","message":"No se pudo conectar a la base de datos local de MongoDB. Iniciando base de datos en memoria (MongoMemoryServer)...","timestamp":"2026-07-15 22:27:38"}
+{"level":"error","message":"Error en la conexión de MongoDB: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.xtqyw.mongodb.net","timestamp":"2026-07-15 22:27:39"}
+{"level":"info","message":"MongoMemoryServer iniciado en mongodb://127.0.0.1:41882/","timestamp":"2026-07-15 22:27:39"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-15 22:27:39"}
+{"level":"info","message":"Rol 'administrador' creado.","timestamp":"2026-07-15 22:27:40"}
+{"level":"info","message":"Rol 'autorizador' creado.","timestamp":"2026-07-15 22:27:40"}
+{"level":"info","message":"Rol 'medico' creado.","timestamp":"2026-07-15 22:27:40"}
+{"level":"info","message":"Usuario Administrador de prueba creado (admin@oficinavirtual.com / Admin123*).","timestamp":"2026-07-15 22:27:40"}
+{"level":"info","message":"Usuario Médico de prueba creado (medico@oficinavirtual.com / Medico123*).","timestamp":"2026-07-15 22:27:40"}
+{"level":"info","message":"Usuario Autorizador de prueba creado (autorizador@oficinavirtual.com / Autorizador123*).","timestamp":"2026-07-15 22:27:40"}
+{"level":"info","message":"Semilla de base de datos completada exitosamente.","timestamp":"2026-07-15 22:27:40"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-15 22:27:40"}
+{"level":"info","message":"Iniciando semilla de base de datos...","timestamp":"2026-07-15 22:35:02"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb+srv://allrg1104:odZrI0xwsjhSq5UC@cluster0.xtqyw.mongodb.net/BD_OfVirtual?appName=Cluster0...","timestamp":"2026-07-15 22:35:02"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-15 22:35:02"}
+{"level":"warn","message":"No se pudo conectar a la base de datos local de MongoDB. Iniciando base de datos en memoria (MongoMemoryServer)...","timestamp":"2026-07-15 22:35:02"}
+{"level":"error","message":"Error en la conexión de MongoDB: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.xtqyw.mongodb.net","timestamp":"2026-07-15 22:35:02"}
+{"level":"info","message":"MongoMemoryServer iniciado en mongodb://127.0.0.1:40840/","timestamp":"2026-07-15 22:35:03"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-15 22:35:03"}
+{"level":"info","message":"Rol 'administrador' creado.","timestamp":"2026-07-15 22:35:03"}
+{"level":"info","message":"Rol 'autorizador' creado.","timestamp":"2026-07-15 22:35:03"}
+{"level":"info","message":"Rol 'medico' creado.","timestamp":"2026-07-15 22:35:03"}
+{"level":"info","message":"Usuario Administrador de prueba creado (admin@oficinavirtual.com / Admin123*).","timestamp":"2026-07-15 22:35:03"}
+{"level":"info","message":"Usuario Médico de prueba creado (medico@oficinavirtual.com / Medico123*).","timestamp":"2026-07-15 22:35:03"}
+{"level":"info","message":"Usuario Autorizador de prueba creado (autorizador@oficinavirtual.com / Autorizador123*).","timestamp":"2026-07-15 22:35:03"}
+{"level":"info","message":"Semilla de base de datos completada exitosamente.","timestamp":"2026-07-15 22:35:03"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-15 22:35:03"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb+srv://allrg1104:odZrI0xwsjhSq5UC@cluster0.xtqyw.mongodb.net/BD_OfVirtual?appName=Cluster0...","timestamp":"2026-07-15 22:35:36"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-15 22:35:36"}
+{"level":"warn","message":"No se pudo conectar a la base de datos local de MongoDB. Iniciando base de datos en memoria (MongoMemoryServer)...","timestamp":"2026-07-15 22:35:36"}
+{"level":"error","message":"Error en la conexión de MongoDB: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.xtqyw.mongodb.net","timestamp":"2026-07-15 22:35:37"}
+{"level":"info","message":"MongoMemoryServer iniciado en mongodb://127.0.0.1:19977/","timestamp":"2026-07-15 22:35:37"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-15 22:35:37"}
+{"level":"info","message":"=================================","timestamp":"2026-07-15 22:35:37"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-15 22:35:37"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-15 22:35:37"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-15 22:35:37"}
+{"level":"info","message":"=================================","timestamp":"2026-07-15 22:35:37"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_FAILED | User: Sistema / Anónimo (N/A) | Details: Intento fallido para el correo: medico@oficinavirtual.com","timestamp":"2026-07-15 22:36:07"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_FAILED | User: Sistema / Anónimo (N/A) | Details: Intento fallido para el correo: medico@oficinavirtual.com","timestamp":"2026-07-15 22:36:15"}
+{"level":"info","message":"Recibida señal de apagado, cerrando servidor...","timestamp":"2026-07-15 22:39:09"}
+{"level":"info","message":"Iniciando semilla de base de datos...","timestamp":"2026-07-15 22:58:55"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb://127.0.0.1:27017/BD_OfVirtual...","timestamp":"2026-07-15 22:58:55"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-15 22:58:58"}
+{"level":"warn","message":"No se pudo conectar a la base de datos local de MongoDB. Iniciando base de datos en memoria (MongoMemoryServer)...","timestamp":"2026-07-15 22:58:58"}
+{"level":"error","message":"Error en la conexión de MongoDB: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-07-15 22:58:58"}
+{"level":"info","message":"MongoMemoryServer iniciado en mongodb://127.0.0.1:11950/","timestamp":"2026-07-15 22:58:58"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-15 22:58:58"}
+{"level":"info","message":"Rol 'administrador' creado.","timestamp":"2026-07-15 22:58:58"}
+{"level":"info","message":"Rol 'autorizador' creado.","timestamp":"2026-07-15 22:58:58"}
+{"level":"info","message":"Rol 'medico' creado.","timestamp":"2026-07-15 22:58:58"}
+{"level":"info","message":"Usuario Administrador de prueba creado (admin@oficinavirtual.com / Admin123*).","timestamp":"2026-07-15 22:58:59"}
+{"level":"info","message":"Usuario Médico de prueba creado (medico@oficinavirtual.com / Medico123*).","timestamp":"2026-07-15 22:58:59"}
+{"level":"info","message":"Usuario Autorizador de prueba creado (autorizador@oficinavirtual.com / Autorizador123*).","timestamp":"2026-07-15 22:58:59"}
+{"level":"info","message":"Semilla de base de datos completada exitosamente.","timestamp":"2026-07-15 22:58:59"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb://127.0.0.1:27017/BD_OfVirtual...","timestamp":"2026-07-15 22:59:26"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-15 22:59:29"}
+{"level":"warn","message":"No se pudo conectar a la base de datos local de MongoDB. Iniciando base de datos en memoria (MongoMemoryServer)...","timestamp":"2026-07-15 22:59:29"}
+{"level":"error","message":"Error en la conexión de MongoDB: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-07-15 22:59:29"}
+{"level":"info","message":"MongoMemoryServer iniciado en mongodb://127.0.0.1:24487/","timestamp":"2026-07-15 22:59:30"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-15 22:59:30"}
+{"level":"info","message":"=================================","timestamp":"2026-07-15 22:59:30"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-15 22:59:30"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-15 22:59:30"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-15 22:59:30"}
+{"level":"info","message":"=================================","timestamp":"2026-07-15 22:59:30"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_FAILED | User: Sistema / Anónimo (N/A) | Details: Intento fallido para el correo: medico@oficinavirtual.com","timestamp":"2026-07-15 22:59:53"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-15 23:06:10"}
+{"level":"info","message":"Iniciando semilla de base de datos...","timestamp":"2026-07-15 23:21:39"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb://127.0.0.1:27017/BD_OfVirtual...","timestamp":"2026-07-15 23:21:39"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-15 23:21:39"}
+{"level":"info","message":"Rol 'administrador' creado.","timestamp":"2026-07-15 23:21:40"}
+{"level":"info","message":"Rol 'autorizador' creado.","timestamp":"2026-07-15 23:21:40"}
+{"level":"info","message":"Rol 'medico' creado.","timestamp":"2026-07-15 23:21:40"}
+{"level":"info","message":"Usuario Administrador de prueba creado (admin@oficinavirtual.com / Admin123*).","timestamp":"2026-07-15 23:21:40"}
+{"level":"info","message":"Usuario Médico de prueba creado (medico@oficinavirtual.com / Medico123*).","timestamp":"2026-07-15 23:21:40"}
+{"level":"info","message":"Usuario Autorizador de prueba creado (autorizador@oficinavirtual.com / Autorizador123*).","timestamp":"2026-07-15 23:21:40"}
+{"level":"info","message":"Semilla de base de datos completada exitosamente.","timestamp":"2026-07-15 23:21:40"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-15 23:21:40"}
+{"level":"info","message":"Iniciando semilla de base de datos...","timestamp":"2026-07-15 23:22:16"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb://127.0.0.1:27017/BD_OfVirtual...","timestamp":"2026-07-15 23:22:16"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-15 23:22:16"}
+{"level":"info","message":"Rol 'administrador' ya existía. Permisos actualizados.","timestamp":"2026-07-15 23:22:16"}
+{"level":"info","message":"Rol 'autorizador' ya existía. Permisos actualizados.","timestamp":"2026-07-15 23:22:16"}
+{"level":"info","message":"Rol 'medico' ya existía. Permisos actualizados.","timestamp":"2026-07-15 23:22:16"}
+{"level":"info","message":"Usuario Administrador ya existe.","timestamp":"2026-07-15 23:22:16"}
+{"level":"info","message":"Usuario Médico ya existe.","timestamp":"2026-07-15 23:22:16"}
+{"level":"info","message":"Usuario Autorizador ya existe.","timestamp":"2026-07-15 23:22:16"}
+{"level":"info","message":"Semilla de base de datos completada exitosamente.","timestamp":"2026-07-15 23:22:16"}
+{"level":"warn","message":"MongoDB desconectado","timestamp":"2026-07-15 23:22:16"}
+{"level":"info","message":"Intentando conectar a MongoDB en mongodb://127.0.0.1:27017/BD_OfVirtual...","timestamp":"2026-07-15 23:22:32"}
+{"level":"info","message":"MongoDB conectado exitosamente","timestamp":"2026-07-15 23:22:32"}
+{"level":"info","message":"=================================","timestamp":"2026-07-15 23:22:32"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-15 23:22:32"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-15 23:22:32"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-15 23:22:32"}
+{"level":"info","message":"=================================","timestamp":"2026-07-15 23:22:32"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Dr. Alejandro Martínez (medico) | Details: Inicio de sesión exitoso","timestamp":"2026-07-15 23:23:17"}
+{"level":"info","message":"[AUDIT] Action: CREATE_REQUEST | User: Dr. Alejandro Martínez (medico) | Details: Solicitud de autorización creada para el paciente: 1144101596 (ID: 6a585d1320805f8b29f47f21)","timestamp":"2026-07-15 23:24:51"}
+{"level":"info","message":"[AUDIT] Action: LOGOUT | User: Dr. Alejandro Martínez (medico) | Details: Cierre de sesión","timestamp":"2026-07-15 23:25:56"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Dra. Patricia Restrepo (autorizador) | Details: Inicio de sesión exitoso","timestamp":"2026-07-15 23:26:00"}
+{"level":"info","message":"[AUDIT] Action: LOGOUT | User: Dra. Patricia Restrepo (autorizador) | Details: Cierre de sesión","timestamp":"2026-07-15 23:26:28"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Administrador Oficina Virtual (administrador) | Details: Inicio de sesión exitoso","timestamp":"2026-07-15 23:26:32"}
+{"level":"info","message":"[AUDIT] Action: LOGOUT | User: Administrador Oficina Virtual (administrador) | Details: Cierre de sesión","timestamp":"2026-07-15 23:29:53"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Dra. Patricia Restrepo (autorizador) | Details: Inicio de sesión exitoso","timestamp":"2026-07-15 23:29:56"}
+{"level":"info","message":"[AUDIT] Action: UPDATE_REQUEST_STATUS | User: Dra. Patricia Restrepo (autorizador) | Details: Estado de solicitud 6a585d1320805f8b29f47f21 cambiado de pendiente a informacion_adicional. Obs: Faltan detallar el valor. ","timestamp":"2026-07-15 23:30:42"}
+{"level":"info","message":"[AUDIT] Action: LOGOUT | User: Dra. Patricia Restrepo (autorizador) | Details: Cierre de sesión","timestamp":"2026-07-15 23:30:46"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Dr. Alejandro Martínez (medico) | Details: Inicio de sesión exitoso","timestamp":"2026-07-15 23:30:49"}
+{"level":"info","message":"[AUDIT] Action: LOGOUT | User: Dr. Alejandro Martínez (medico) | Details: Cierre de sesión","timestamp":"2026-07-15 23:31:06"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Administrador Oficina Virtual (administrador) | Details: Inicio de sesión exitoso","timestamp":"2026-07-15 23:31:09"}
+{"level":"info","message":"[AUDIT] Action: LOGOUT | User: Administrador Oficina Virtual (administrador) | Details: Cierre de sesión","timestamp":"2026-07-15 23:32:01"}
+{"level":"info","message":"Recibida señal de apagado, cerrando servidor...","timestamp":"2026-07-15 23:32:11"}

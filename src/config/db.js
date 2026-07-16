@@ -6,7 +6,7 @@ let mongoMemoryServer = null;
 const connectDB = async () => {
   try {
     const mongoURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/oficina-virtual';
-    
+
     mongoose.connection.on('connected', () => {
       logger.info('MongoDB conectado exitosamente');
     });
@@ -20,7 +20,7 @@ const connectDB = async () => {
     });
 
     logger.info(`Intentando conectar a MongoDB en ${mongoURI}...`);
-    
+
     await mongoose.connect(mongoURI, {
       serverSelectionTimeoutMS: 3000,
     });
@@ -30,7 +30,7 @@ const connectDB = async () => {
       const { MongoMemoryServer } = require('mongodb-memory-server');
       mongoMemoryServer = await MongoMemoryServer.create();
       const inMemoryUri = mongoMemoryServer.getUri();
-      
+
       logger.info(`MongoMemoryServer iniciado en ${inMemoryUri}`);
       await mongoose.connect(inMemoryUri);
     } catch (memError) {
