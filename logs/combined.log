@@ -336,3 +336,140 @@
 {"level":"info","message":"Recibida señal de apagado, cerrando servidor...","timestamp":"2026-07-25 20:41:14"}
 {"level":"info","message":"Servidor HTTP cerrado.","timestamp":"2026-07-25 20:43:04"}
 {"level":"warn","message":"MongoDB desconectado.","timestamp":"2026-07-25 20:43:04"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-25 21:50:04"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-25 21:50:04"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-25 21:50:04"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-25 21:50:04"}
+{"level":"info","message":"MongoDB Atlas conectado exitosamente.","timestamp":"2026-07-25 21:50:05"}
+{"level":"info","message":"=================================","timestamp":"2026-07-25 21:50:08"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-25 21:50:08"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-25 21:50:08"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-25 21:50:08"}
+{"level":"info","message":"=================================","timestamp":"2026-07-25 21:50:08"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-25 21:50:08"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-25 21:50:08"}
+{"level":"info","message":"MongoDB Atlas conectado exitosamente.","timestamp":"2026-07-25 21:50:09"}
+{"level":"info","message":"=================================","timestamp":"2026-07-25 21:50:10"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-25 21:50:10"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-25 21:50:10"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-25 21:50:10"}
+{"level":"info","message":"=================================","timestamp":"2026-07-25 21:50:10"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-25 21:50:30"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-25 21:50:30"}
+{"level":"info","message":"MongoDB Atlas conectado exitosamente.","timestamp":"2026-07-25 21:50:31"}
+{"level":"info","message":"=================================","timestamp":"2026-07-25 21:50:32"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-25 21:50:32"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-25 21:50:32"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-25 21:50:32"}
+{"level":"info","message":"=================================","timestamp":"2026-07-25 21:50:32"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Dr. Alejandro Martínez (medico) | Details: Inicio de sesión exitoso","timestamp":"2026-07-25 21:50:43"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-25 22:05:33"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-25 22:05:33"}
+{"level":"info","message":"MongoDB Atlas conectado exitosamente.","timestamp":"2026-07-25 22:05:34"}
+{"level":"info","message":"=================================","timestamp":"2026-07-25 22:05:35"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-25 22:05:35"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-25 22:05:35"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-25 22:05:35"}
+{"level":"info","message":"=================================","timestamp":"2026-07-25 22:05:35"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Dr. Alejandro Martínez (medico) | Details: Inicio de sesión exitoso","timestamp":"2026-07-25 22:05:45"}
+{"level":"info","message":"[AUDIT] Action: LOGOUT | User: Dr. Alejandro Martínez (medico) | Details: Cierre de sesión","timestamp":"2026-07-25 22:06:03"}
+{"level":"info","message":"Recibida señal de apagado, cerrando servidor...","timestamp":"2026-07-25 22:06:12"}
+{"level":"info","message":"Servidor HTTP cerrado.","timestamp":"2026-07-25 22:06:12"}
+{"level":"info","message":"Iniciando semilla de base de datos...","timestamp":"2026-07-26 16:03:59"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-26 16:03:59"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-26 16:03:59"}
+{"level":"info","message":"MongoDB Atlas conectado exitosamente.","timestamp":"2026-07-26 16:04:00"}
+{"level":"info","message":"Rol 'administrador' ya existía. Permisos actualizados.","timestamp":"2026-07-26 16:04:00"}
+{"level":"info","message":"Rol 'autorizador' ya existía. Permisos actualizados.","timestamp":"2026-07-26 16:04:01"}
+{"level":"info","message":"Rol 'medico' ya existía. Permisos actualizados.","timestamp":"2026-07-26 16:04:01"}
+{"level":"info","message":"Usuario Administrador ya existe.","timestamp":"2026-07-26 16:04:01"}
+{"level":"info","message":"Usuario Médico ya existe.","timestamp":"2026-07-26 16:04:01"}
+{"level":"info","message":"Usuario Autorizador ya existe.","timestamp":"2026-07-26 16:04:01"}
+{"level":"info","message":"Programa 'AMBULATORIO ESENCIAL' creado.","timestamp":"2026-07-26 16:04:01"}
+{"level":"info","message":"Programa 'AMBULATORIO ESPECIAL' creado.","timestamp":"2026-07-26 16:04:02"}
+{"level":"info","message":"Programa 'ASOCIADO' creado.","timestamp":"2026-07-26 16:04:02"}
+{"level":"info","message":"Programa 'CLASICO' creado.","timestamp":"2026-07-26 16:04:02"}
+{"level":"info","message":"Programa 'HOSPITALIZACION CIRUGIA MATERNIDAD' creado.","timestamp":"2026-07-26 16:04:02"}
+{"level":"info","message":"Programa 'ORO' creado.","timestamp":"2026-07-26 16:04:02"}
+{"level":"info","message":"Programa 'ORO PLUS' creado.","timestamp":"2026-07-26 16:04:02"}
+{"level":"info","message":"Programa 'ORO PRIME EMPRESARIAL' creado.","timestamp":"2026-07-26 16:04:03"}
+{"level":"info","message":"Programa 'PLATA' creado.","timestamp":"2026-07-26 16:04:03"}
+{"level":"info","message":"Programa 'PLATA JOVEN' creado.","timestamp":"2026-07-26 16:04:03"}
+{"level":"info","message":"Programa 'PLATA PRIME' creado.","timestamp":"2026-07-26 16:04:03"}
+{"level":"info","message":"Programa 'PREFERENTE' creado.","timestamp":"2026-07-26 16:04:03"}
+{"level":"info","message":"Programa 'TRADICIONAL' creado.","timestamp":"2026-07-26 16:04:04"}
+{"level":"info","message":"Programa 'TRADICIONAL ESPECIAL' creado.","timestamp":"2026-07-26 16:04:04"}
+{"level":"info","message":"IPS 'BONSANA IPS SAS' creada con código 1.","timestamp":"2026-07-26 16:04:04"}
+{"level":"info","message":"IPS 'CHRISTUS SINERGIA CLINICA FARALLONES' creada con código 2.","timestamp":"2026-07-26 16:04:04"}
+{"level":"info","message":"IPS 'CHRISTUS SINERGIA CLÍNICA PALMA REAL S.A.S.' creada con código 3.","timestamp":"2026-07-26 16:04:05"}
+{"level":"info","message":"IPS 'CLINICA BASILIA SA' creada con código 4.","timestamp":"2026-07-26 16:04:05"}
+{"level":"info","message":"IPS 'CLINICA COLSANITAS S.A' creada con código 5.","timestamp":"2026-07-26 16:04:05"}
+{"level":"info","message":"IPS 'CLÍNICA DE ALTA COMPLEJIDAD SANTA BÁRBARA S.A.S' creada con código 6.","timestamp":"2026-07-26 16:04:05"}
+{"level":"info","message":"IPS 'CLINICA DE OCCIDENTE SA' creada con código 7.","timestamp":"2026-07-26 16:04:05"}
+{"level":"info","message":"IPS 'CLINICA IMBANACO S.A.S.' creada con código 8.","timestamp":"2026-07-26 16:04:05"}
+{"level":"info","message":"IPS 'CLINICA NUESTRA SEÑORA DE LOS REMEDIOS' creada con código 9.","timestamp":"2026-07-26 16:04:06"}
+{"level":"info","message":"IPS 'CLINICA OFTALMOLOGICA DE CALI' creada con código 10.","timestamp":"2026-07-26 16:04:06"}
+{"level":"info","message":"IPS 'CLINICA SAN FRANCISCO SA' creada con código 11.","timestamp":"2026-07-26 16:04:06"}
+{"level":"info","message":"IPS 'CLINICA SAN RAFAEL DE POPAYÁN SAS' creada con código 12.","timestamp":"2026-07-26 16:04:06"}
+{"level":"info","message":"IPS 'COOMEVA EXPERIENCIA MEDICA SAS' creada con código 13.","timestamp":"2026-07-26 16:04:06"}
+{"level":"info","message":"IPS 'DIME CLINICA NEUROCARDIOVASCULAR' creada con código 14.","timestamp":"2026-07-26 16:04:07"}
+{"level":"info","message":"IPS 'DUMIAN MEDICAL SAS' creada con código 15.","timestamp":"2026-07-26 16:04:07"}
+{"level":"info","message":"IPS 'FUNDACION CLINICA VALLE DEL LILI' creada con código 16.","timestamp":"2026-07-26 16:04:07"}
+{"level":"info","message":"IPS 'FUNDACION HOSPITAL SAN PEDRO' creada con código 17.","timestamp":"2026-07-26 16:04:07"}
+{"level":"info","message":"IPS 'HOSP UNIVERSITARIO SAN JOSE' creada con código 18.","timestamp":"2026-07-26 16:04:07"}
+{"level":"info","message":"IPS 'HOSPITAL DEPARTAMENTAL TOMAS URIBE URIBE DE TULUA E' creada con código 19.","timestamp":"2026-07-26 16:04:07"}
+{"level":"info","message":"IPS 'HOSPITAL SAN JOSE DE BUGA' creada con código 20.","timestamp":"2026-07-26 16:04:08"}
+{"level":"info","message":"IPS 'HOSPITAL SUSANA LOPEZ' creada con código 21.","timestamp":"2026-07-26 16:04:08"}
+{"level":"info","message":"IPS 'HOSPITAL UNIVERSITARIO DEPARTAMENTAL DE NARIÑO EMPR' creada con código 22.","timestamp":"2026-07-26 16:04:08"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-26 16:04:19"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-26 16:04:19"}
+{"level":"info","message":"MongoDB Atlas conectado exitosamente.","timestamp":"2026-07-26 16:04:20"}
+{"level":"info","message":"=================================","timestamp":"2026-07-26 16:04:23"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-26 16:04:23"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-26 16:04:23"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-26 16:04:23"}
+{"level":"info","message":"=================================","timestamp":"2026-07-26 16:04:23"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-26 16:04:23"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-26 16:04:23"}
+{"level":"info","message":"MongoDB Atlas conectado exitosamente.","timestamp":"2026-07-26 16:04:25"}
+{"level":"info","message":"=================================","timestamp":"2026-07-26 16:04:25"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-26 16:04:25"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-26 16:04:25"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-26 16:04:25"}
+{"level":"info","message":"=================================","timestamp":"2026-07-26 16:04:25"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-26 16:07:53"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-26 16:07:53"}
+{"level":"info","message":"MongoDB Atlas conectado exitosamente.","timestamp":"2026-07-26 16:07:55"}
+{"level":"info","message":"=================================","timestamp":"2026-07-26 16:07:56"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-26 16:07:56"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-26 16:07:56"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-26 16:07:56"}
+{"level":"info","message":"=================================","timestamp":"2026-07-26 16:07:56"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-26 16:09:47"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-26 16:09:47"}
+{"level":"info","message":"MongoDB Atlas conectado exitosamente.","timestamp":"2026-07-26 16:09:49"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-26 16:10:27"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-26 16:10:27"}
+{"level":"info","message":"MongoDB Atlas conectado exitosamente.","timestamp":"2026-07-26 16:10:28"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-26 16:12:29"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-26 16:12:29"}
+{"level":"info","message":"MongoDB Atlas conectado exitosamente.","timestamp":"2026-07-26 16:12:30"}
+{"level":"info","message":"Configurando servidores DNS locales: 8.8.8.8, 8.8.4.4","timestamp":"2026-07-26 16:13:23"}
+{"level":"info","message":"Intentando conectar a MongoDB Atlas...","timestamp":"2026-07-26 16:13:23"}
+{"level":"info","message":"MongoDB Atlas conectado exitosamente.","timestamp":"2026-07-26 16:13:24"}
+{"level":"info","message":"=================================","timestamp":"2026-07-26 16:13:25"}
+{"level":"info","message":" Servidor iniciado en puerto 4000 ","timestamp":"2026-07-26 16:13:25"}
+{"level":"info","message":" Entorno: development ","timestamp":"2026-07-26 16:13:25"}
+{"level":"info","message":" Documentación: http://localhost:4000/api-docs ","timestamp":"2026-07-26 16:13:25"}
+{"level":"info","message":"=================================","timestamp":"2026-07-26 16:13:25"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Dr. Alejandro Martínez (medico) | Details: Inicio de sesión exitoso","timestamp":"2026-07-26 16:13:41"}
+{"level":"info","message":"[AUDIT] Action: CREATE_REQUEST | User: Dr. Alejandro Martínez (medico) | Details: Solicitud de autorización creada para el paciente: 1110370028 (ID: 6a6679032cb5ce92e9e7e9f0)","timestamp":"2026-07-26 16:15:48"}
+{"level":"info","message":"[AUDIT] Action: LOGOUT | User: Dr. Alejandro Martínez (medico) | Details: Cierre de sesión","timestamp":"2026-07-26 16:16:02"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Dr. GUILLERMO GIRALDO (autorizador) | Details: Inicio de sesión exitoso","timestamp":"2026-07-26 16:16:06"}
+{"level":"info","message":"[AUDIT] Action: UPDATE_REQUEST_STATUS | User: Dr. GUILLERMO GIRALDO (autorizador) | Details: Estado de solicitud 6a6679032cb5ce92e9e7e9f0 cambiado de pendiente a rechazada. Obs: Se requiere historial clinico. ","timestamp":"2026-07-26 16:17:14"}
+{"level":"info","message":"[AUDIT] Action: LOGOUT | User: Dr. GUILLERMO GIRALDO (autorizador) | Details: Cierre de sesión","timestamp":"2026-07-26 16:17:23"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Administrador Oficina Virtual (administrador) | Details: Inicio de sesión exitoso","timestamp":"2026-07-26 16:17:27"}
+{"level":"info","message":"[AUDIT] Action: LOGOUT | User: Administrador Oficina Virtual (administrador) | Details: Cierre de sesión","timestamp":"2026-07-26 16:18:41"}
+{"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Dr. Alejandro Martínez (medico) | Details: Inicio de sesión exitoso","timestamp":"2026-07-26 16:18:46"}
+{"level":"warn","message":"Intento de acceso con token inválido o expirado: TokenExpiredError: jwt expired","timestamp":"2026-07-26 16:34:12"}
+{"level":"warn","message":"Intento de acceso con token inválido o expirado: TokenExpiredError: jwt expired","timestamp":"2026-07-26 16:50:12"}

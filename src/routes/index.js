@@ -4,6 +4,8 @@ const userRoutes = require('./userRoutes');
 const requestRoutes = require('./requestRoutes');
 const dashboardRoutes = require('./dashboardRoutes');
 const reportRoutes = require('./reportRoutes');
+const programRoutes = require('./programRoutes');
+const ipsRoutes = require('./ipsRoutes');
 const { UserController } = require('../controllers/UserController');
 const { authMiddleware } = require('../middlewares/authMiddleware');
 
@@ -20,6 +22,8 @@ router.use('/requests', requestRoutes);
 router.use('/dashboard', dashboardRoutes);
 router.use('/export', reportRoutes);
 router.use('/reports', reportRoutes);
+router.use('/programs', programRoutes);
+router.use('/ips', ipsRoutes);
 
 router.get('/profile', authMiddleware, userController.getProfile);
 router.put('/profile', authMiddleware, userController.updateProfile);

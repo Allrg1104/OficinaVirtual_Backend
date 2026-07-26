@@ -41,22 +41,35 @@ class RequestService {
     }
 
     const doctorSnapshot = {
-      name: doctor.name,
+      name: data.profesionalOrdenador,
       document: doctor.document,
-      specialty: doctor.specialty,
-      ips: doctor.ips,
+      specialty: data.especialidad,
+      ips: data.ips,
     };
 
     const request = await this.requestRepo.create({
       doctor: doctorUserId,
       doctorSnapshot,
       patient: {
-        name: data.patient.name,
-        document: data.patient.document,
-        birthDate: new Date(data.patient.birthDate),
-        gender: data.patient.gender,
+        name: data.nombrePaciente,
+        document: data.documento,
       },
-      medicalInfo: data.medicalInfo,
+      medicalInfo: {
+        procedure: data.procedimiento,
+      },
+      tipoDocumento: data.tipoDocumento,
+      documento: data.documento,
+      nombrePaciente: data.nombrePaciente,
+      edad: Number(data.edad),
+      programa: data.programa,
+      antiguedadMeses: Number(data.antiguedadMeses),
+      procedimiento: data.procedimiento,
+      costo: Number(data.costo),
+      profesionalOrdenador: data.profesionalOrdenador,
+      especialidad: data.especialidad,
+      ips: data.ips,
+      conceptoAuditoria: data.conceptoAuditoria,
+      segundoConcepto: data.segundoConcepto,
       status: 'pendiente',
       observations: [],
       attachments: [],

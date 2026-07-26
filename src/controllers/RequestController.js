@@ -9,11 +9,6 @@ class RequestController {
       const ipAddress = req.ip;
       const userAgent = req.headers['user-agent'];
 
-      let patient = req.body.patient;
-      let medicalInfo = req.body.medicalInfo;
-
-      if (typeof patient === 'string') patient = JSON.parse(patient);
-      if (typeof medicalInfo === 'string') medicalInfo = JSON.parse(medicalInfo);
 
       const files = [];
       if (req.files) {
@@ -27,13 +22,9 @@ class RequestController {
         }
       }
 
-      if (files.length === 0) {
-        return res.status(400).json({ message: 'Se requiere al menos un archivo adjunto (ej: Historia clínica)' });
-      }
-
       const request = await requestService.createRequest(
         doctorUserId,
-        { patient, medicalInfo },
+        req.body,
         files,
         ipAddress,
         userAgent

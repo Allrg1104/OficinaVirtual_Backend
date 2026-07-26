@@ -2,19 +2,19 @@ const { z } = require('zod');
 
 const createRequestSchema = z.object({
   body: z.object({
-    patient: z.object({
-      name: z.string({ required_error: 'El nombre del paciente es requerido' }).min(2),
-      document: z.string({ required_error: 'El documento del paciente es requerido' }).min(5),
-      birthDate: z.string({ required_error: 'La fecha de nacimiento del paciente es requerida' }),
-      gender: z.enum(['M', 'F', 'Otro'], { required_error: 'El sexo del paciente es requerido' }),
-    }, { required_error: 'Los datos del paciente son requeridos' }),
-    medicalInfo: z.object({
-      diagnosis: z.string({ required_error: 'El diagnóstico es requerido' }).min(5),
-      cie10Code: z.string({ required_error: 'El código CIE10 es requerido' }).min(3),
-      procedure: z.string({ required_error: 'El procedimiento es requerido' }).min(5),
-      cupsCode: z.string({ required_error: 'El código CUPS es requerido' }).min(3),
-      justification: z.string({ required_error: 'La justificación es requerida' }).min(10),
-    }, { required_error: 'La información médica es requerida' }),
+    tipoDocumento: z.string({ required_error: 'El tipo de documento es requerido' }),
+    documento: z.string({ required_error: 'El documento es requerido' }).min(5),
+    nombrePaciente: z.string({ required_error: 'El nombre del paciente es requerido' }).min(2),
+    edad: z.number({ required_error: 'La edad es requerida' }).nonnegative(),
+    programa: z.string({ required_error: 'El programa es requerido' }),
+    antiguedadMeses: z.number({ required_error: 'La antigüedad en meses es requerida' }).nonnegative(),
+    procedimiento: z.string({ required_error: 'El procedimiento es requerido' }).min(5),
+    costo: z.number({ required_error: 'El costo es requerido' }).nonnegative(),
+    profesionalOrdenador: z.string({ required_error: 'El profesional ordenador es requerido' }),
+    especialidad: z.string({ required_error: 'La especialidad es requerida' }),
+    ips: z.string({ required_error: 'La IPS es requerida' }),
+    conceptoAuditoria: z.string({ required_error: 'El concepto de auditoría es requerido' }).min(5),
+    segundoConcepto: z.string({ required_error: 'El segundo concepto es requerido' }).min(5),
   }),
 });
 

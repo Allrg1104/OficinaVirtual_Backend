@@ -10,15 +10,14 @@ const router = Router();
 const controller = new RequestController();
 
 const parseMultipartJson = (req, res, next) => {
-  if (req.body.patient && typeof req.body.patient === 'string') {
-    try {
-      req.body.patient = JSON.parse(req.body.patient);
-    } catch (e) {}
+  if (req.body.edad !== undefined) {
+    req.body.edad = Number(req.body.edad);
   }
-  if (req.body.medicalInfo && typeof req.body.medicalInfo === 'string') {
-    try {
-      req.body.medicalInfo = JSON.parse(req.body.medicalInfo);
-    } catch (e) {}
+  if (req.body.antiguedadMeses !== undefined) {
+    req.body.antiguedadMeses = Number(req.body.antiguedadMeses);
+  }
+  if (req.body.costo !== undefined) {
+    req.body.costo = Number(req.body.costo);
   }
   next();
 };
