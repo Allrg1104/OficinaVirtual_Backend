@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const path = require('path');
+const mongoose = require('mongoose');
 const routes = require('./routes');
 const { errorMiddleware } = require('./middlewares/errorMiddleware');
 const { standardLimiter } = require('./middlewares/rateLimit');
@@ -17,21 +18,27 @@ app.use(helmet({
 const allowedOrigins = [
   'http://localhost:3000',
   'http://127.0.0.1:3000',
-  // Local static files server origin if any
 ];
+
+if (process.env.FRONTEND_URL) {
+  const formattedFrontendUrl = process.env.FRONTEND_URL.replace(/\/+$/, '');
+  if (!allowedOrigins.includes(formattedFrontendUrl)) {
+    allowedOrigins.push(formattedFrontendUrl);
+  }
+}
 
 app.use(cors({
   origin: (origin, callback) => {
+    if (!origin) return callback(null, true);
+    
     if (
-      !origin ||
       allowedOrigins.includes(origin) ||
-      process.env.NODE_ENV === 'development' ||
-      /\.vercel\.app$/.test(origin)
+      process.env.NODE_ENV === 'development'
     ) {
-      callback(null, true);
-    } else {
-      callback(new Error('No permitido por CORS'));
+      return callback(null, true);
     }
+    
+    return callback(new Error('No permitido por CORS'));
   },
   credentials: true,
 }));
@@ -41,7 +48,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api', standardLimiter);
 
-// Serve static Frontend files
+// Servir archivos estáticos del frontend local (si existen en desarrollo)
 app.use(express.static(path.join(__dirname, '../../OficinaVirtual_Frontend')));
 
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
@@ -56,8 +63,8 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'http://localhost:4000/api',
-        description: 'Servidor Local de Desarrollo',
+        url: '/api',
+        description: 'Servidor API',
       },
     ],
     components: {
@@ -70,18 +77,33 @@ const swaggerOptions = {
       },
     },
   },
-  apis: ['./src/routes/*.js'],
+  apis: [path.join(__dirname, './routes/*.js')],
 };
 
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-// Rutas de estado del servidor para verificar despliegues (Vercel)
+// Health Check Handlers
+const healthHandler = (req, res) => {
+  const dbStateMap = { 0: 'disconnected', 1: 'connected', 2: 'connecting', 3: 'disconnecting' };
+  const dbState = dbStateMap[mongoose.connection.readyState] || 'unknown';
+  res.json({
+    status: 'ok',
+    service: 'Oficina Virtual Backend API',
+    environment: process.env.NODE_ENV || 'development',
+    dbState,
+    timestamp: new Date().toISOString(),
+  });
+};
+
+app.get('/health', healthHandler);
+app.get('/api/health', healthHandler);
+
 app.get('/', (req, res) => {
   res.json({
     status: 'success',
     message: 'El Servidor de Oficina Virtual está corriendo correctamente',
-    environment: process.env.NODE_ENV,
+    environment: process.env.NODE_ENV || 'development',
     timestamp: new Date().toISOString()
   });
 });
@@ -90,7 +112,7 @@ app.get('/api', (req, res) => {
   res.json({
     status: 'success',
     message: 'El Servidor de Oficina Virtual está corriendo correctamente (API)',
-    environment: process.env.NODE_ENV,
+    environment: process.env.NODE_ENV || 'development',
     timestamp: new Date().toISOString()
   });
 });

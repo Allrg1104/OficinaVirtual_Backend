@@ -5,85 +5,123 @@ const { logger } = require('./logger');
 let mongoMemoryServer = null;
 let isMemoryDb = false;
 
-const connectDB = async () => {
-  const mongoURI = process.env.MONGODB_URI;
+// Connection cache for serverless environments (Vercel)
+let cached = global.mongoose;
+if (!cached) {
+  cached = global.mongoose = { conn: null, promise: null };
+}
 
-  if (!mongoURI) {
-    logger.error('Error: MONGODB_URI no está configurada en las variables de entorno.');
-    process.exit(1);
+const connectDB = async () => {
+  // If already connected (readyState 1 = connected), return cached connection
+  if (mongoose.connection.readyState === 1) {
+    return mongoose.connection;
   }
 
-  // Configurar listeners de eventos. Limpiar listeners previos para evitar duplicados.
-  mongoose.connection.removeAllListeners('connected');
-  mongoose.connection.removeAllListeners('error');
-  mongoose.connection.removeAllListeners('disconnected');
+  const mongoURI = process.env.MONGODB_URI;
+  if (!mongoURI) {
+    const errorMsg = 'MONGODB_URI no está configurada en las variables de entorno.';
+    logger.error(`Error: ${errorMsg}`);
+    throw new Error(errorMsg);
+  }
 
-  mongoose.connection.on('connected', () => {
-    if (isMemoryDb) {
-      logger.info('MongoMemoryServer conectado exitosamente.');
-    } else {
-      logger.info('MongoDB Atlas conectado exitosamente.');
+  // If a connection attempt is currently in progress, await it
+  if (cached.promise) {
+    cached.conn = await cached.promise;
+    return cached.conn;
+  }
+
+  // Configurar listeners de eventos una sola vez
+  if (!mongoose.connection.listeners('connected').length) {
+    mongoose.connection.on('connected', () => {
+      if (isMemoryDb) {
+        logger.info('MongoMemoryServer conectado exitosamente.');
+      } else {
+        logger.info('MongoDB Atlas conectado exitosamente.');
+      }
+    });
+
+    mongoose.connection.on('error', (err) => {
+      logger.error(`Error en la conexión de MongoDB: ${err.message}`);
+    });
+
+    mongoose.connection.on('disconnected', () => {
+      logger.warn('MongoDB desconectado.');
+    });
+  }
+
+  const isDev = process.env.NODE_ENV === 'development';
+  const isVercel = Boolean(process.env.VERCEL);
+
+  // Configurar servidores DNS solo en desarrollo local fuera de Vercel si se especifica
+  if (isDev && !isVercel) {
+    const dnsPrimary = process.env.DNS_PRIMARY;
+    if (dnsPrimary) {
+      const dnsSecondary = process.env.DNS_SECONDARY || '8.8.4.4';
+      logger.info(`Configurando servidores DNS locales: ${dnsPrimary}, ${dnsSecondary}`);
+      try {
+        dns.setServers([dnsPrimary, dnsSecondary]);
+      } catch (dnsErr) {
+        logger.error(`Error al establecer servidores DNS: ${dnsErr.message}`);
+      }
     }
-  });
-
-  mongoose.connection.on('error', (err) => {
-    logger.error(`Error en la conexión de MongoDB: ${err.message}`);
-  });
-
-  mongoose.connection.on('disconnected', () => {
-    logger.warn('MongoDB desconectado.');
-  });
-
-  // Configurar servidores DNS antes de conectar
-  const dnsPrimary = process.env.DNS_PRIMARY || '8.8.8.8';
-  const dnsSecondary = process.env.DNS_SECONDARY || '8.8.4.4';
-  
-  logger.info(`Configurando servidores DNS: ${dnsPrimary}, ${dnsSecondary}`);
-  try {
-    dns.setServers([dnsPrimary, dnsSecondary]);
-  } catch (dnsErr) {
-    logger.error(`Error al establecer servidores DNS: ${dnsErr.message}`);
   }
 
   logger.info('Intentando conectar a MongoDB Atlas...');
-  try {
+  const opts = {
+    serverSelectionTimeoutMS: 10000,
+    connectTimeoutMS: 10000,
+    socketTimeoutMS: 45000,
+    bufferCommands: false,
+  };
+
+  cached.promise = mongoose.connect(mongoURI, opts).then((m) => {
     isMemoryDb = false;
-    await mongoose.connect(mongoURI, {
-      serverSelectionTimeoutMS: 10000,
-      connectTimeoutMS: 10000,
-      socketTimeoutMS: 45000,
-    });
-  } catch (error) {
+    return m;
+  }).catch(async (error) => {
+    cached.promise = null;
     logger.error(`Error conectando a MongoDB Atlas: ${error.message}`);
 
-    const isDev = process.env.NODE_ENV === 'development';
-    if (!isDev) {
-      logger.error('No se pudo conectar a MongoDB Atlas en un entorno no-development. Saliendo...');
-      process.exit(1);
+    // Intentar MongoMemoryServer ÚNICAMENTE en desarrollo local fuera de Vercel
+    if (isDev && !isVercel) {
+      logger.info('Iniciando MongoMemoryServer como fallback de desarrollo local.');
+      try {
+        const { MongoMemoryServer } = require('mongodb-memory-server');
+        mongoMemoryServer = await MongoMemoryServer.create();
+        const inMemoryUri = mongoMemoryServer.getUri();
+        isMemoryDb = true;
+
+        logger.info('MongoMemoryServer iniciado en fallback.');
+        return await mongoose.connect(inMemoryUri);
+      } catch (memError) {
+        logger.error(`Error al iniciar MongoMemoryServer: ${memError.message}`);
+        throw memError;
+      }
     }
 
-    logger.info('Iniciando MongoMemoryServer como fallback de development.');
-    try {
-      const { MongoMemoryServer } = require('mongodb-memory-server');
-      mongoMemoryServer = await MongoMemoryServer.create();
-      const inMemoryUri = mongoMemoryServer.getUri();
-      isMemoryDb = true;
+    // En producción o Vercel, lanzar la excepción (NO process.exit)
+    throw error;
+  });
 
-      logger.info('MongoMemoryServer iniciado en fallback.');
-      await mongoose.connect(inMemoryUri);
-    } catch (memError) {
-      logger.error(`Error al iniciar MongoMemoryServer: ${memError.message}`);
-      process.exit(1);
-    }
+  try {
+    cached.conn = await cached.promise;
+    return cached.conn;
+  } catch (err) {
+    cached.promise = null;
+    throw err;
   }
 };
 
 const closeDB = async () => {
-  await mongoose.connection.close();
+  if (mongoose.connection.readyState !== 0) {
+    await mongoose.connection.close();
+  }
   if (mongoMemoryServer) {
     await mongoMemoryServer.stop();
+    mongoMemoryServer = null;
     logger.info('MongoMemoryServer detenido.');
   }
+  cached.conn = null;
+  cached.promise = null;
 };
 
 module.exports = {
