@@ -334,3 +334,5 @@
 {"level":"info","message":"[AUDIT] Action: LOGOUT | User: Dr. Alejandro Martínez (medico) | Details: Cierre de sesión","timestamp":"2026-07-25 20:39:55"}
 {"level":"info","message":"[AUDIT] Action: LOGIN_SUCCESS | User: Dra. Patricia Restrepo (autorizador) | Details: Inicio de sesión exitoso","timestamp":"2026-07-25 20:39:59"}
 {"level":"info","message":"Recibida señal de apagado, cerrando servidor...","timestamp":"2026-07-25 20:41:14"}
+{"level":"info","message":"Servidor HTTP cerrado.","timestamp":"2026-07-25 20:43:04"}
+{"level":"warn","message":"MongoDB desconectado.","timestamp":"2026-07-25 20:43:04"}

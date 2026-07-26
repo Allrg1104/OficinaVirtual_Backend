@@ -22,7 +22,12 @@ const allowedOrigins = [
 
 app.use(cors({
   origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV === 'development') {
+    if (
+      !origin ||
+      allowedOrigins.includes(origin) ||
+      process.env.NODE_ENV === 'development' ||
+      /\.vercel\.app$/.test(origin)
+    ) {
       callback(null, true);
     } else {
       callback(new Error('No permitido por CORS'));
@@ -70,6 +75,25 @@ const swaggerOptions = {
 
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
+// Rutas de estado del servidor para verificar despliegues (Vercel)
+app.get('/', (req, res) => {
+  res.json({
+    status: 'success',
+    message: 'El Servidor de Oficina Virtual está corriendo correctamente',
+    environment: process.env.NODE_ENV,
+    timestamp: new Date().toISOString()
+  });
+});
+
+app.get('/api', (req, res) => {
+  res.json({
+    status: 'success',
+    message: 'El Servidor de Oficina Virtual está corriendo correctamente (API)',
+    environment: process.env.NODE_ENV,
+    timestamp: new Date().toISOString()
+  });
+});
 
 app.use('/api', routes);
 
