@@ -12,3 +12,4 @@ config/local.json
 
 # Ignorar todo lo que termine en .env
 *.env
+.env

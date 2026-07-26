@@ -10,3 +10,12 @@
 {"level":"error","message":"Error en la conexión de MongoDB: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.xtqyw.mongodb.net","timestamp":"2026-07-15 22:35:37"}
 {"level":"error","message":"Error en la conexión de MongoDB: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-07-15 22:58:58"}
 {"level":"error","message":"Error en la conexión de MongoDB: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-07-15 22:59:29"}
+{"level":"error","message":"Error en la conexión de MongoDB: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.xtqyw.mongodb.net","timestamp":"2026-07-25 20:02:39"}
+{"level":"error","message":"Error en la conexión de MongoDB: MongoServerSelectionError: getaddrinfo ENOTFOUND cluster0.xtqyw.mongodb.net","timestamp":"2026-07-25 20:13:44"}
+{"level":"error","message":"Error conectando a MongoDB Atlas: bad auth : Authentication failed.","timestamp":"2026-07-25 20:30:57"}
+{"level":"error","message":"Error en la conexión de MongoDB: bad auth : Authentication failed.","timestamp":"2026-07-25 20:30:58"}
+{"level":"error","message":"Error conectando a MongoDB Atlas: bad auth : Authentication failed.","timestamp":"2026-07-25 20:31:19"}
+{"level":"error","message":"Error conectando a MongoDB Atlas: bad auth : Authentication failed.","timestamp":"2026-07-25 20:31:29"}
+{"level":"error","message":"Error en la conexión de MongoDB: bad auth : Authentication failed.","timestamp":"2026-07-25 20:31:29"}
+{"level":"error","message":"Error conectando a MongoDB Atlas: bad auth : Authentication failed.","timestamp":"2026-07-25 20:33:19"}
+{"level":"error","message":"Error en la conexión de MongoDB: bad auth : Authentication failed.","timestamp":"2026-07-25 20:33:19"}
